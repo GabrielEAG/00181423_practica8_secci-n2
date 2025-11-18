@@ -7,3 +7,34 @@ El JWT es tu identificación digital y pasaporte.
 Se genera al hacer login exitosamente.
 El cliente lo guarda y lo envía al servidor en cada petición protegida.
 El servidor utiliza el JWT (y la clave secreta) para verificar que el cliente es legítimo y, por lo tanto, autorizar el acceso, sin necesidad de mantener una sesión en el servidor.
+
+backend:
+node app.js
+http://localhost:3000/login
+
+frontend:
+npm start 
+
+GET http://localhost:5000/guide/users
+
+GET http://localhost:5000/guide/users/1
+
+POST http://localhost:5000/guide/users
+Content-Type: application/json
+
+{
+  "name": "Juan",
+  "email": "juan@example.com"
+}
+
+PUT http://localhost:5000/guide/users/1
+Content-Type: application/json
+
+{
+  "name": "Juan Editado",
+  "email": "nuevo@example.com"
+}
+
+DELETE http://localhost:5000/guide/users/1
+
+GET http://localhost:5000/guide/
