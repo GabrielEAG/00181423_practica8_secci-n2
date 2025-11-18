@@ -9,3 +9,4 @@ export const pool = new Pool({
     servername: "ep-curly-sound-ahcrxe5b-pooler"
   }
 });
+export default pool;
